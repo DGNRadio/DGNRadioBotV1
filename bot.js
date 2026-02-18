@@ -27,12 +27,12 @@ bot.command('start', (ctx) => {
 });
 
 bot.command('play', (ctx) => {
-    const webAppUrl = RENDER_EXTERNAL_URL || `http://localhost:${PORT}`;
-    console.log(`Sending WebApp URL: ${webAppUrl}`);
+    // t.me deep link — Telegram opens this as a Mini App inside the app (works in groups too)
+    const miniAppUrl = 'https://t.me/DGNRadioBot/player';
     ctx.reply(
-        'I can stream DGNRadio in Telegram groups. Use the controls below or type /play to start the vibe.',
+        '🎵 DGNRadio is live! Hit the button below to start listening.',
         Markup.inlineKeyboard([
-            Markup.button.webApp('Listen Now', webAppUrl)
+            Markup.button.url('▶️ Listen Now', miniAppUrl)
         ])
     );
 });

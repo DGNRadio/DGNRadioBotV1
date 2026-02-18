@@ -27,7 +27,7 @@ bot.command('start', (ctx) => {
 });
 
 bot.command('play', (ctx) => {
-    // t.me deep link — Telegram opens this as a Mini App inside the app (works in groups too)
+    // Registered Mini App — opens the player inside Telegram
     const miniAppUrl = 'https://t.me/DGNRadioBot/player';
     ctx.reply(
         '🎵 DGNRadio is live! Hit the button below to start listening.',

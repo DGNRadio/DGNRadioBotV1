@@ -2,8 +2,10 @@
   "name": "harmonic-constellation",
   "version": "1.0.0",
   "description": "A simple Telegram bot that streams DGNRadio directly in group chats using a Telegram Web App.",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
+    "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

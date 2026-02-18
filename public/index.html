@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGNRadio</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player-card">
+            <div class="header">
+                <div class="status-dot"></div>
+                <span id="status-text">OFF AIR</span>
+            </div>
+            
+            <div class="album-art">
+                <i class="fas fa-broadcast-tower"></i>
+            </div>
+
+            <div class="track-info">
+                <h2>DGNRadio</h2>
+                <p id="now-playing">Loading stream...</p>
+            </div>
+
+            <div class="controls">
+                <button id="play-btn" class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+
+            <div class="volume-container">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player" preload="none">
+        <source src="https://streaming.live365.com/a00850" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

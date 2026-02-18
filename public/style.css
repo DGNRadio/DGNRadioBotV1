@@ -2,7 +2,8 @@
     --bg-color: #18222d;
     --card-bg: #24303f;
     --text-color: #ffffff;
-    --accent-color: #b3e230; /* Lime Green */
+    --accent-color: #b3e230;
+    /* Lime Green */
     --secondary-color: #7b8591;
     --font-family: 'Roboto', sans-serif;
 }
@@ -73,14 +74,22 @@ body {
     font-size: 60px;
     color: var(--accent-color);
     margin: 20px 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     animation: pulse 2s infinite ease-in-out;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .track-info h2 {
@@ -128,6 +137,7 @@ body {
 
 input[type=range] {
     -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     background: transparent;
 }
